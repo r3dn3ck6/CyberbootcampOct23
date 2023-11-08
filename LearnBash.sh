@@ -90,3 +90,4 @@ do
     echo "x is $x"
     ((x++))
 done
+./LearnBash.sh
