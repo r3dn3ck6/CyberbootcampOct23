@@ -1,0 +1,33 @@
+
+; <<>> DiG 9.18.18-0ubuntu0.22.04.1-Ubuntu <<>>
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35865
+;; flags: qr rd ra; QUERY: 1, ANSWER: 13, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;.				IN	NS
+
+;; ANSWER SECTION:
+.			29523	IN	NS	f.root-servers.net.
+.			29523	IN	NS	e.root-servers.net.
+.			29523	IN	NS	k.root-servers.net.
+.			29523	IN	NS	j.root-servers.net.
+.			29523	IN	NS	l.root-servers.net.
+.			29523	IN	NS	h.root-servers.net.
+.			29523	IN	NS	m.root-servers.net.
+.			29523	IN	NS	c.root-servers.net.
+.			29523	IN	NS	g.root-servers.net.
+.			29523	IN	NS	d.root-servers.net.
+.			29523	IN	NS	a.root-servers.net.
+.			29523	IN	NS	i.root-servers.net.
+.			29523	IN	NS	b.root-servers.net.
+
+;; Query time: 8 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Tue Nov 14 14:51:39 CST 2023
+;; MSG SIZE  rcvd: 239
+
+
