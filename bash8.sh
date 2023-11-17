@@ -1,5 +1,6 @@
 #!/bin/bash
 # https://ss64.com/bash/
+# https://blog.ycrash.io/2021/06/28/ping-unix-linux-command-beginners-introduction-with-examples/
 # https://www.neuralnine.com/code-a-ddos-script-in-python/
 
 #Lets create a script that would work like a DDOS (Distributed Denial of Service) attack by using a while loop
@@ -14,6 +15,7 @@ for IP in "192.168.1.1"
 do
   echo $IP
   ping -c 1 $IP
+  sleep 5
 done
 
 # This bash code is a simple loop that pings an IP address. Let's break down each element of the code:
