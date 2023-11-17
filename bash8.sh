@@ -18,6 +18,17 @@ do
   sleep 5
 done
 
+# Anthonys code
+x=1
+while [$x =1]
+do 
+    ping 192.168.10.1
+    echo "do you wnat to run again?"
+    read $x
+done
+
+
+
 # This bash code is a simple loop that pings an IP address. Let's break down each element of the code:
 
 # do: This keyword starts the loop execution. It signifies the beginning of the loop block.
