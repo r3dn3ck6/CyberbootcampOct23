@@ -25,5 +25,6 @@ chmod +x git_commit_and_push.sh
 # To execute the script,run:
 
 ./git_commit_and_push.sh
+files
 
 # Ensure that you are in the correct Git repository directory when executing this script, and use it responsibly after reviewing the changes being committed.
