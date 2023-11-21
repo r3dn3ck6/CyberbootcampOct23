@@ -4,10 +4,10 @@
 git add .
 
 # Prompt for commit message
-read -p "Enter commit message: " commit_message
+read -p "Enter commit message: " updates
 
 # Commit changes with the provided message
-git commit -m "$commit_message"
+git commit -m "$updates"
 
 # Push changes to the remote repository
 git push
@@ -16,7 +16,7 @@ git push
 
 # Adds all changes to the staging area using git add . (this assumes you want to add all changes; you can modify it to add specific files if needed).
 # Prompts the user to enter a commit message.
-# Commits the changes with the provided commit message using git commit -m "$commit_message".
+# Commits the changes with the provided commit message using git commit -m "$updates".
 # Pushes the committed changes to the remote repository using git push.
 # Remember to make the script executable using the following command:
 
