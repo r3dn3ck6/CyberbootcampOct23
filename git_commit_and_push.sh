@@ -4,7 +4,7 @@
 git add .
 
 # Prompt for commit message
-read -p "Enter commit message: " updates
+read -p "Enter commit message: "updates"
 
 # Commit changes with the provided message
 git commit -m "$updates"
