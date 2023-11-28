@@ -80,3 +80,78 @@ fi
 # This if statement will execute the code block if both condition1 and condition2 are true.
 
 # && helps streamline the execution flow by allowing the script or command line to proceed only when the previous command or condition executes successfully.
+
+# LuckyLucias
+
+# echo "Triangle Check"
+# echo "please type the first integer"
+# read x
+# echo "Please type the second integer"
+# read y
+# echo "Please type the final integer"
+# read z
+# if [ $x -eq $y -a $y -eq $z ]
+# then echo "EQUILATERAL"
+# elif [ $x -ne $y -a $y -ne $z ] 
+# then echo "SCALINE" 
+# elif [ $x -eq $y -a $x -ne $z -o $y -eq $z -a $y -ne $x ]
+# then echo "ISOSCELES"
+# fi
+
+# Dylan Williams
+# #!/bin/bash
+# #script ops 201 class Ops Challenge Solutions
+# #Author: Dylan Williams
+# #Nov 22 2023
+
+# echo "Please enter 3 sides to a triangle."
+# sleep 1
+# echo "Please enter side 1 of a triangle."
+# read A
+# sleep 1
+# echo "Please enter side 2 of a triangle."
+# read B
+# sleep 1
+# echo "Please enter side 3 of a triangle."
+# read C
+
+
+
+# if (( $A == $B && $A == $C && $B == $C ))
+#     then
+#         echo "This is an Equilateral triangel"
+# elif (( $A == $B && $A != $C ))
+#     then
+#         echo "This is an Isoceles triangle."
+# elif (( $A == $C && $A != $B ))
+#     then
+#         echo "This is an Iscoceles triangle."
+# elif (( $B == $C && $A != $B ))
+#     then 
+#         echo "This is an Isoceles triangle."
+# else
+#     echo "This is a Scalene triangle." 
+# fi
+
+Victor Nieva
+# echo "Please Input 3 different values"
+# read x; read y; read z
+
+# if (( x >= 1000 || y >= 1000 || z >= 1000 || x == 0 || y == 0 || z == 0)) 
+#     then echo "out of range"
+#         exit
+# fi
+
+# if (( x + y <= z || y + z <= x || z + x <= y ))
+#     then echo "not a triangle"
+#         exit
+# fi
+
+# if (( x == y && y == z ))
+#     then echo "equilateral"
+# elif (( x == y || y == z || z == x ))
+#     then echo "isosceles"
+# else
+#     echo "scalene"
+# fi
+
