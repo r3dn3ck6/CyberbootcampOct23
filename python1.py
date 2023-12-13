@@ -1,9 +1,14 @@
 # I used an online kindlebook to learn: Python 2nd Edition: Learn Python in one day and learn it well. Python for beginners with hands-on project. (https://read.amazon.com/?asin=B071Z2Q6TQ&ref_=dbs_t_r_kcr)
 # Write a multi-line comment with your name, favorite food, and dream job on 3 different lines.
+# the ''' ''' writes a mult-line comment to show it , use print
+#Python, the triple single quotes (''') or triple double quotes (""") are used to create multiline strings, also known as docstrings. Docstrings are often used to provide documentation for functions, classes, or modules. They can span multiple lines and are enclosed by either triple single or triple double quotes.
+'''
+My name is Josh Hughes.
+My favorite food is potato soup.
+My dream job is a welder.
+'''
 
-print ("My Name is Josh Hughes")
-print ("My Favorite food are plantains")
-print ("My dream job is to be retired and working only on my ranch")
+print ("My Name is Josh Hughes\n My Favorite food are plantains\n My dream job is to be retired and working only on my ranch")
 
 # assign 5 different data types to 5 different variables. At least one datatype must be a string.
 # Integer
@@ -11,11 +16,11 @@ userage = 57
 print(userage)
 
 #Float
-userHeight = 68
+userHeight = 68.7
 print(userHeight)
 
 #String
-userName = "R3dn3ck6 " + "Colombia " + "T3XAN"
+userName = "R3dn3ck6\nColombia\nT3XAN"
 print(userName)
 print(len(userName))
 
@@ -43,17 +48,19 @@ savvy = "Learning Python is Awesome!"
 print(savvy)
 
 # Replace "Awesome" with "great" in the string
-savvy = "Learning Python is GREAT!"
-print(savvy)
+new_savvy=savvy.replace("Awsome, Great")
+print(new_savvy)
+
 
 # Create and assign 3 more variables called name, age and length using the multi-variable naming method.
 #Used the Snake Case all lower case 
+
+name, age, length = "Josh", 57, 68
+
 name = "Josh"
 age = 57
 length = 68
-print (name)
-print (age)
-print (length)
+print("name\nage\n\length")
 
 # Format a new string called 'miniBio' using variables in curly brackets to complete this phrase... "Hi my name is (name), I am (tall) and (so) old today.")
 name = "Josh"
@@ -77,7 +84,7 @@ mixed_list1 = [57, "Josh", 68, ("Learning Python is GREAT!"), ("R3dn3ck6 " + "Co
 print (mixed_list1)
 
 # append or insert several more items to the list
-mixed_list1.append(33)
+mixed_list1.[2] = 70
 print (mixed_list1)
 
 # find and print the length of the list

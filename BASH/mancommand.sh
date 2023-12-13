@@ -1,0 +1,1 @@
+https://bash.cyberciti.biz/guide/Man_command
