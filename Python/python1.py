@@ -84,7 +84,7 @@ mixed_list1 = [57, "Josh", 68, ("Learning Python is GREAT!"), ("R3dn3ck6 " + "Co
 print (mixed_list1)
 
 # append or insert several more items to the list
-mixed_list1.[2] = 70
+mixed_list1[2] = 70
 print (mixed_list1)
 
 # find and print the length of the list
