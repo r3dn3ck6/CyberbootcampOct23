@@ -10,6 +10,11 @@ if number % 2 == 0:
 else:
     print(f"{number} is an odd number.")
 
+# %: This is the modulo operator in Python. 
+# It returns the remainder of the division of the left operand by the right operand. 
+# For example, number % 2 will return 0 if number is even and 1 if number is odd. 
+# In this case, it's checking if the remainder when number is divided by 2 is equal to 0.
+
 # Create a program using maths and f-Strings that tells us how many 
 # days, weeks, months we have left if we live until 90 years old.
 
