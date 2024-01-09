@@ -8,9 +8,9 @@ import time
 # Start code below this line:
 
 def count_mississippi():
-    for i in range(5, 0, -1):
-        print(i)
-        time.sleep(1) # time.sleep(1) pauses the loop for 1 second between each number.
+    mississippi = 1
+    for mississippi in range(5, 0, -1):
+            time.sleep(1) # time.sleep(1) pauses the loop for 1 second between each number.
 
     print("Ready or not, here I come!")
 
@@ -19,6 +19,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Start code below this line:
+    mississippi = 1 
+for mississippi in range(1,6):
+    print(mississippi, "Mississippi")
+    time.sleep(1)
+    pass
+print("Ready or not here  I come")
 
 
 #The line if __name__ == "__main__": in Python is a common idiom used to check whether the current script is being run as the main program
