@@ -11,7 +11,7 @@
 
 #Write your code below this row 👇
 
-for fizzbuzz in range(51):
+for fizzbuzz in range(101):
     if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
         print("fizzbuzz")
         continue
