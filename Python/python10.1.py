@@ -109,36 +109,36 @@ b = input("Get, Post, Put, Delete , Head, Patch, Options:")
 
 # Add some comments of what these request are doing to your script
 
-import requests
+# import requests
 
-# Prompt the user to select an HTTP Method
-http_method = input("Choose an HTTP Method (Get, Post, Put, Delete, Head, Patch, Options): ").capitalize()
+# # Prompt the user to select an HTTP Method
+# http_method = input("Choose an HTTP Method (Get, Post, Put, Delete, Head, Patch, Options): ").capitalize()
 
-# Prompt the user to enter a destination URL
-url = "https://github.com/CoreyGray45/SaavyCoders"
+# # Prompt the user to enter a destination URL
+# url = "https://github.com/CoreyGray45/SaavyCoders"
 
-# Print the entire request to be sent and ask for confirmation
-print(f"Request to be sent: {http_method} {url}")
-confirmation = input("Please confirm to proceed. (y/n): ")
+# # Print the entire request to be sent and ask for confirmation
+# print(f"Request to be sent: {http_method} {url}")
+# confirmation = input("Please confirm to proceed. (y/n): ")
 
-if confirmation.lower() == "y":
-    # Using the requests library, perform a request to your GitHub URL
-    response = requests.request(http_method, url)
+# if confirmation.lower() == "y":
+#     # Using the requests library, perform a request to your GitHub URL
+#     response = requests.request(http_method, url)
 
-    # Translate the status code into plain terms
-    status_codes = {
-        200: "OK",
-        201: "Created",
-        204: "No Content",
-        400: "Bad Request",
-        401: "Unauthorized",
-        403: "Forbidden",
-        404: "Not Found",
-        500: "Internal Server Error",
-    }
+#     # Translate the status code into plain terms
+#     status_codes = {
+#         200: "OK",
+#         201: "Created",
+#         204: "No Content",
+#         400: "Bad Request",
+#         401: "Unauthorized",
+#         403: "Forbidden",
+#         404: "Not Found",
+#         500: "Internal Server Error",
+#     }
 
-    status = status_codes.get(response.status_code, "Unknown")
-    print(f"Status: {status}")
+#     status = status_codes.get(response.status_code, "Unknown")
+#     print(f"Status: {status}")
 
-else:
-    print("Input Error.")
+# else:
+#     print("Input Error.")
