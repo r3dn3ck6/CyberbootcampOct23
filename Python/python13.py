@@ -18,27 +18,46 @@
 
 import random
 
-while True:
+def get_user_choice():
+    return input("Choose Rock, Paper, or Scissors: ")
+
+def get_computer_choice():
     options = ["Rock", "Paper", "Scissors"]
+    return random.choice(options)
 
-    user_choice = input("Choose Rock, Paper, or Scissors: ")
-
-    computer_choice = random.choice(options)
-
-    print("You chose:", user_choice)
-    print("Computer chose:", computer_choice)
-
+def determine_winner(user_choice, computer_choice):
     if user_choice == computer_choice:
-        print("It's a tie!")
-    elif (user_choice == "Rock" and computer_choice == "Scissors") or \
-         (user_choice == "Paper" and computer_choice == "Rock") or \
+        return "It's a tie!"
+    elif (user_choice == "Rock" and computer_choice == "Scissors") or
+         (user_choice == "Paper" and computer_choice == "Rock") or
          (user_choice == "Scissors" and computer_choice == "Paper"):
-        print("You win!")
+        return "You win!"
     else:
-        print("Computer wins!")
+        return "Computer wins!"
 
-    # While Loop
-    play_again = input("Do you want to play again? (y/n): ").lower()
-    if play_again != 'y':
-        print("Thanks for playing. Goodbye!")
-        break
+def play_game():
+    wins, losses = 0, 0
+    while True:
+        user_choice = get_user_choice()
+        computer_choice = get_computer_choice()
+        print("You chose:", user_choice)
+        print("Computer chose:", computer_choice)
+        
+        result = determine_winner(user_choice, computer_choice)
+        print(result)
+        
+        if "win" in result:
+            wins += 1
+        elif "loss" in result:
+            losses += 1
+        
+        print(f"Wins: {wins}, Losses: {losses}")
+
+        # While Loop
+        play_again = input("Do you want to play again? (y/n): ").lower()
+        if play_again != 'y':
+            print("Thanks for playing. Goodbye!")
+            break
+
+# Run the game
+play_game()

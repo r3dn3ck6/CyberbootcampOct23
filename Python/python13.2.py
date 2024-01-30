@@ -19,11 +19,27 @@ while True:
     else:
         print("Computer wins!")
 
-    # While Loop
-    play_again = input("Do you want to play again? (yes/no): ").lower()
-    if play_again != 'yes':
-        print("Thanks for playing. Goodbye!")
-        break
+def play_game():
+    wins, losses = 0, 0
+    while True:
+        user_choice, computer_choice = get_user_choice(), get_computer_choice()
+        print(f"You chose {user_choice}\nComputer chose {computer_choice}")
+        result = determine_winner(user_choice, computer_choice)
+        print(result)
+        if "win" in result:
+            wins += 1
+        elif "loss" in result:
+            losses += 1
+        print(f"Wins: {wins}, Losses: {losses}")
+
+        # While Loop
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        if play_again != 'yes':
+            print("Thanks for playing. Goodbye!")
+            break
+
+# Run the game
+play_game()
 
 
     ###########################################################################################################
